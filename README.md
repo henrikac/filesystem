@@ -30,10 +30,10 @@ func main() {
 Given the folder structure
 ```
 assets/
-	css/
-		main.css
-	js/
-		main.js
+  css/
+    main.cs
+  js/
+    main.js
 ```
 
 a request to `/css/main.css` and `/js/main.js` will return the requested files but a request to e.g. `/css/` would return a `fs.ErrNotExist` error.
