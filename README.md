@@ -27,7 +27,7 @@ func main() {
 }
 ```
 
-Given the folder structure
+Given the following folder structure
 ```
 assets/
   css/
@@ -36,4 +36,4 @@ assets/
     main.js
 ```
 
-a request to `/css/main.css` and `/js/main.js` will return the requested files but a request to e.g. `/css/` would return a `fs.ErrNotExist` error.
+a request to `/css/main.css` and `/js/main.js` will return the requested files but a request to e.g. `/css/` will return a `fs.ErrNotExist` error.
